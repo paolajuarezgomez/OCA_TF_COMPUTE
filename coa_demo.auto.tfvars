@@ -7,6 +7,7 @@
 
 # default compartment 
 default_compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+# region
 region= "uk-london-1"
 
 #############################
@@ -14,19 +15,12 @@ region= "uk-london-1"
 #############################
 
 # the prefix that will be used for all the names of the OCI artifacts that this automation will provision
-names_prefix = "coa-demo-"
-
-# the defined tags to be used for all the artifacts that this automation will provision
-#defined_tags = {}
-
-# the freeform tags to be used for all the artifacts that this automation will provision
-#freeform_tags = {}
+names_prefix = "atp-demo-"
 
 #############################
 # COA network
 #############################
 
-# The specific network compartment id. If this is null then the default, project level compartment_id will be used.
 network_compartment_id = null
 
 # VCN CIDR
@@ -56,8 +50,8 @@ ssh_private_key_path = "./key/id_rsa"
 
 #adb_password              >>>  Stored in a github secret as adb_password
 adb_workload               = "OLTP"
-adb_db_name                = "ADBCOADEMO"
-adb_display_name           = "ADBCOADEMO"
+adb_db_name                = "ADBCOADEMO1"
+adb_display_name           = "ADBCOADEMO1"
 adb_db_version             = "19c"
 cpu_core_count             = "1"
 data_storage_size_in_tbs   = "1"
