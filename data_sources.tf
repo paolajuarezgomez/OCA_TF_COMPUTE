@@ -11,14 +11,6 @@ data "oci_identity_availability_domains" "availability_domains" {
   compartment_id = var.tenancy_id
 }
 
-data "oci_core_images" "this" {
-  #Required
-  compartment_id = var.default_compartment_id
-
-  #Optional
-  display_name = var.image_name
-}
-
 
 data "oci_objectstorage_namespace" "user_namespace" {
 
@@ -32,3 +24,10 @@ data "oci_objectstorage_objects" "test_objects" {
   namespace = data.oci_objectstorage_namespace.user_namespace.namespace
 }
 
+data "oci_core_images" "this" {
+  #Required
+  compartment_id = var.default_compartment_id
+
+  #Optional
+  display_name = var.image_name
+}

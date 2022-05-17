@@ -178,27 +178,6 @@ resource "oci_core_security_list" "coa_public_subnet_security_list" {
   }
   freeform_tags = var.freeform_tags
 
-  # Egress Rules
-  #egress_security_rules = {}
-
-  dynamic "ingress_security_rules" {
-    for_each = var.lbaas_listening_ports
-    content {
-      #Required
-      protocol = local.tcp_protocol
-      source   = local.anywhere
-      #Optional
-      description = "Allow ingress for HTTPS:${ingress_security_rules.value} from anywhere"
-      source_type = "CIDR_BLOCK"
-      stateless   = false
-      tcp_options {
-        max = ingress_security_rules.value
-        min = ingress_security_rules.value
-        #Optional
-        #source_port_range = 
-      }
-    }
-  }
 }
 
 resource "oci_core_security_list" "coa_atp_private_subnet_security_list" {

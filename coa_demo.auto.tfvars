@@ -42,7 +42,18 @@ public_subnet_cidr = "10.0.10.0/24"
 #############################
 # OCI COA ADB
 #############################
-deploy_adb                 = "True"
+
+# Compute instances ssh public key
+ssh_public_key_path = "./key/id_rsa.pub"
+
+# Compute instances ssh private key
+ssh_private_key_path = "./key/id_rsa"
+
+
+#############################
+# OCI COA ADB
+#############################
+
 #adb_password              >>>  Stored in a github secret as adb_password
 adb_workload               = "OLTP"
 adb_db_name                = "ADBCOADEMO"
