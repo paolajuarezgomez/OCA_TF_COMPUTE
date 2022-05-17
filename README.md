@@ -32,7 +32,7 @@ token
 * We want to use a [S3-Compatible Backend](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformUsingObjectStore.htm) , read the documentation carefully. You need an OCI object storage [bucket](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformUsingObjectStore.htm) called *"terraform-backend"*.
 
 * Create a ["Customer Secret keys"](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcredentials.htm#To4) also named as "Amazon S3 Compatibility API keys". A Customer Secret key consists of an Access Key/Secret key pair. 
-* Add the *Custome Secret Keys* varibales to the previus ones:
+* Add also the *Custome Secret Keys* variables to the previus ones:
 
 ````
 access_key_id 
@@ -44,8 +44,8 @@ secret_access_key
 adb_password
 ````
 
-* The pipelines/workflows configuration are defined in the directory **.github/workflows**, in this case we have created three different workdlows: **plan.yaml, unit.yaml** and **apply.yaml**
-* Add your *api_private_key* to the file **user.pem** in the key directory
+* The pipeline configuration is defined in the directory **.github/workflows**, in this case we have created three different workdlows: **plan.yaml, unit.yaml** and **apply.yaml**
+* Add your **api_private_key** to the file **user.pem** in the key directory
 * Add your **ssh public** and **ssh private keys** in the key directory, they will be used to connect to the bastion.
 * Rename the file **terraform.tfvars.template** to **terraform.tfvars** and add the value of your *tenancy_ocid* 
 * Define the values desired in the  **coa_demo.auto.tfvars** ( mandatory required ssh public key and ssh private key file´s names and your compartment_ocid) 
