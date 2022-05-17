@@ -33,7 +33,7 @@ network_compartment_id = null
 vcn_cidr = "10.0.0.0/16"
 
 # private subnet CIDR
-private_subnet_cidr = "10.0.0.0/24"
+private_atp_subnet_cidr="10.0.11.0/24"
 
 # public subnet CIDR
 public_subnet_cidr = "10.0.10.0/24"
