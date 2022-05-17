@@ -1,4 +1,4 @@
-#  Deploy TRF with GitHub Actions. 
+#  Deploy IaC (TF) with GitHub Actions. 
 # -- How to build a GitHub Action pipeline  --
 
 ## ✅ Showcase
