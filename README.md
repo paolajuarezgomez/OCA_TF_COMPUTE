@@ -1,4 +1,4 @@
-# COA Deploy TRF with GitHub UseCase. 
+#  Deploy TRF with GitHub Actions. 
 # -- How to build pipeline with GitHub Action  --
 
 ## ✅ Showcase
@@ -9,8 +9,8 @@ A workflow is a configurable automated process that will run one or more jobs. W
 
 During this UseCase we're going to:
 
-* Use Github Actions to build different pipelines/workflows.
-* Create a test pipeline/workflow using Terratest.
+* Use Github Actions to build different pipelines.
+* Create a test pipeline using Terratest.
 * Deploy IaC using Terraform.
 
 ## ✅ Usage
@@ -38,19 +38,15 @@ token
 access_key_id 
 secret_access_key 
 ````
-* If you want to deploy an adb include the admin password:
+* We are goint to deploy an ATP database, include the admin password:
 
 ````
 adb_password
 ````
-* If you want to configure the manual backup from the previus adb include the credential password and remember to add you username in the **coa_demo.auto.tfvars** file
 
-````
-password
-````
 * The pipelines/workflows configuration are defined in the directory **.github/workflows**, in this case we have created three different workdlows: **plan.yaml, unit.yaml** and **apply.yaml**
-* Add your *api_private_key* to the file **user.pem**
-* Add your ssh public and ssh private keys in the cers directory, they will be used to connect to the webservers nodes.
+* Add your *api_private_key* to the file **user.pem** in the key directory
+* Add your ssh public and ssh private keys in the cers directory, they will be used to connect to the bastion.
 * Rename the file **terraform.tfvars.template** to **terraform.tfvars** and add the value of your *tenancy_ocid* 
 * Define the values desired in the  **coa_demo.auto.tfvars** ( mandatory required ssh public key and ssh private key file´s names and your compartment_ocid) 
 * Go to settings of your repo, and active the use of workflows.(*Settings-> Actions-> General-> Allow all actions and reusable workflows*)
