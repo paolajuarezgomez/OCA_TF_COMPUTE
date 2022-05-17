@@ -1,5 +1,5 @@
 #  Deploy TRF with GitHub Actions. 
-# -- How to build pipeline with GitHub Action  --
+# -- How to build a GitHub Action pipeline  --
 
 ## ✅ Showcase
 
