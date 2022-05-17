@@ -52,7 +52,7 @@ adb_password
 * Go to settings of your repo, and active the use of workflows.(*Settings-> Actions-> General-> Allow all actions and reusable workflows*)
 
 * The terraform code included in this demo will deploy the next resources:
-![COA-Demo-Diagram.png](images/Diagram.png)
+![COA-Demo-Diagram.png](images/COA-Demo-Diagram.png.png)
 
 * Create a new branch, make changes in the repo files and publish the changes to the new branch. 
 * Open a "merge pull request" and check how the first two pipelines run:
