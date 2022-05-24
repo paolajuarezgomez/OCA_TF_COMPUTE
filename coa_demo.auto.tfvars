@@ -67,6 +67,9 @@ adb_state                  = "AVAILABLE"
 #Enable/Disable Operations Insights for this Autonomous Database. Values supported are ENABLED and NOT_ENABLED
 insights_status            = "NOT_ENABLED"
 
+#Autonomous Data Guard provides a standby database instance in a different availability domain or in a standby database instance in different region. 
+#With a standby database in the current region, if the primary instance becomes unavailable, Autonomous Database automatically switches the role of the standby database to primary and begins recreating a new standby database.
+# With a cross-region standby database, you can perform a manual failover to the standby database if the current region goes down.
 local_data_guard_enabled= "true"
 
 
