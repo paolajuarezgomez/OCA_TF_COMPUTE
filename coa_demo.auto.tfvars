@@ -72,7 +72,7 @@ insights_status            = "NOT_ENABLED"
 # With a cross-region standby database, you can perform a manual failover to the standby database if the current region goes down.
 local_data_guard_enabled= "false"
 
-is_data_guard_enabled = "false"
+is_data_guard_enabled = "true"
 
 
 
