@@ -28,6 +28,7 @@ module "adb" {
     is_access_control_enabled        = null
     is_auto_scaling_enabled          = var.auto_scaling
     is_data_guard_enabled            = false
+    is_local_data_guard_enabled      = var.local_data_guard_enabled
     is_free_tier                     = false
     is_mtls_connection_required      = true
     is_refreshable_clone             = null

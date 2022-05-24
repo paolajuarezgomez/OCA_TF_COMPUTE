@@ -223,3 +223,8 @@ variable "insights_status" {
   # Values supported are ENABLED and NOT_ENABLED
   default = "NOT_ENABLED"
 }
+
+variable "local_data_guard_enabled" {
+  type        = bool
+  default = "false"
+}
