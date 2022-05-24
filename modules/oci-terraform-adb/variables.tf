@@ -28,6 +28,7 @@ variable "adb" {
     is_access_control_enabled            = bool,
     is_auto_scaling_enabled              = bool,
     is_data_guard_enabled                = bool,
+    is_local_data_guard_enabled          = bool,
     is_free_tier                         = bool,
     is_mtls_connection_required          = bool,
     is_refreshable_clone                 = bool,

@@ -28,7 +28,9 @@ resource "oci_database_autonomous_database" "adb_database" {
     freeform_tags                        = var.adb.freeform_tags
     is_access_control_enabled            = var.adb.is_access_control_enabled # If enabled access is enabled by whitelistedIps. If disable access is NSG
     is_auto_scaling_enabled              = var.adb.is_auto_scaling_enabled # Default: FALSE
-    is_data_guard_enabled                = var.adb.is_data_guard_enabled # Indicates in-region DG. Not applicable to cross-region AutoDG or DG in dedicated or ExaCC
+    ##is_data_guard_enabled              = var.adb.is_data_guard_enabled # Deprecated
+    is_local_data_guard_enabled          =var.adb.is_local_data_guard_enabled   #Indicates whether the Autonomous Database has local (in-region) Data Guard enabled. 
+    is_data_guard_enabled                =var.adb.is_data_guard_enabled #Indicates whether the Autonomous Database has local (in-region) Data Guard enabled.
     is_free_tier                         = var.adb.is_free_tier # Default: FALSE. AJD or APEX not avaible for always free
     is_mtls_connection_required          = var.adb.is_mtls_connection_required # TRUE if mTLS is required
     is_refreshable_clone                 = var.adb.is_refreshable_clone # Applicable when source=CLONE_TO_REFRESHABLE. True for creating refreshable. False for detaching clone from source
