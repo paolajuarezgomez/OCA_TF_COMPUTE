@@ -8,6 +8,8 @@ output "adb_database" {
     adb_wallet_content = oci_database_autonomous_database_wallet.adb_database_wallet.content
     conn_db            = oci_database_autonomous_database.adb_database.connection_strings
     cpu_db             = oci_database_autonomous_database.adb_database.cpu_core_count
+    dg_db              = oci_database_autonomous_database.adb_database.is_data_guard_enabled
+    local_dg_db        = oci_database_autonomous_database.adb_database.is_local_data_guard_enabled
 
   }
 }

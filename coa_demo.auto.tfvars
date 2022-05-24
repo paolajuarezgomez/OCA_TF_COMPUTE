@@ -71,6 +71,7 @@ insights_status            = "NOT_ENABLED"
 #With a standby database in the current region, if the primary instance becomes unavailable, Autonomous Database automatically switches the role of the standby database to primary and begins recreating a new standby database.
 # With a cross-region standby database, you can perform a manual failover to the standby database if the current region goes down.
 local_data_guard_enabled= "true"
+
 is_data_guard_enabled = "true"
 
 
