@@ -228,3 +228,8 @@ variable "local_data_guard_enabled" {
   type        = bool
   default = "false"
 }
+
+variable "is_data_guard_enabled" {
+  type        = bool
+  default = "false"
+}
