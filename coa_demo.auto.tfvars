@@ -4,11 +4,13 @@
 #############################
 # TENANCY DETAILS
 #############################
-
 # compartment 
 compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
 # region
 region= "uk-london-1"
+#Domain
+domain = "NoEK:UK-LONDON-1-AD-1"
+
 
 #############################
 # Network
@@ -19,10 +21,8 @@ subnet_id =ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl
 # Marketplace image
 #############################
 name = "testserver"
-domain = "NoEK:UK-LONDON-1-AD-1"
 source_name = "Oracle WebLogic Server Enterprise Edition UCM"
 shape_vm = "VM.Standard.E4.Flex"
-
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
 
