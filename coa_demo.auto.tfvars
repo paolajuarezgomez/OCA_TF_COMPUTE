@@ -31,8 +31,7 @@ shape_vm = "VM.Standard.E4.Flex"
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
 
-# Compute instances ssh private key
-ssh_private_key_path = "./key/id_rsa"
+
 
 
 
