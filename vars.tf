@@ -62,5 +62,6 @@ variable "shape_vm" {
 
 # Compute instances ssh private key
 variable "ssh_public_key_path" {
+  type        = string
   description = "Compute instances ssh private key"
 }
