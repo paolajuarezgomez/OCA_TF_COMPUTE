@@ -16,10 +16,6 @@ output "COA_Demo_Details" {
     automation_run_by  = data.oci_identity_user.coa_demo_executer.name
     bucketname         = data.oci_objectstorage_objects.test_objects.bucket
     region             = var.region
-    adb                = module.adb[*].adb_database.adb_database_id
-    cpu                = module.adb[*].adb_database.cpu_db
-    dg                 = module.adb[*].adb_database.dg_db
-    local_dg           = module.adb[*].adb_database.local_dg_db
     
   }
 }
