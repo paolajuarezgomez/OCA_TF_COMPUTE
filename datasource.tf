@@ -3,36 +3,31 @@ data "oci_identity_user" "coa_demo_executer" {
   user_id = var.user_id
 }
 
-output "availability_Domain" {
-  description = "availability_domain"
-  value = oci_core_instance.test_instance.availability_domain
+data "oci_core_app_catalog_listing_resource_version" "test_catalog_listing" {
+  listing_id = data.oci_marketplace_listing_package.test_listing_package.app_catalog_listing_id
+  resource_version = data.oci_marketplace_listing_package.test_listing_package.app_catalog_listing_resource_version
 }
 
-output "listing_id" {
-  description = ""
-  value      = data.oci_marketplace_listing.test_listing.id
+data "oci_marketplace_listing_package" "test_listing_package" {
+  listing_id      = data.oci_marketplace_listing.test_listing.id
+  package_version = data.oci_marketplace_listing.test_listing.default_package_version
+  compartment_id = var.compartment_id
 }
 
-output "package_version"{
-  description = "default package version"
-  value   = data.oci_marketplace_listing.test_listing.default_package_version
+data "oci_marketplace_listing_package_agreements" "test_listing_package_agreements" {
+  listing_id      = data.oci_marketplace_listing.test_listing.id
+  package_version = data.oci_marketplace_listing.test_listing.default_package_version
+  compartment_id = var.compartment_id
 }
 
-output "source_id"{
-  description = "ocid source"
-  value   = data.oci_core_app_catalog_listing_resource_version.test_catalog_listing.listing_resource_id 
+
+data "oci_marketplace_listing" "test_listing" {
+  listing_id     = data.oci_marketplace_listings.test_listings.listings[0].id
+  compartment_id = var.compartment_id
 }
 
-output "app_catalog"{
-  description = ""
-  value   = data.oci_marketplace_listing_package.test_listing_package.app_catalog_listing_id
-}
 
-output "oci_marketplace_listings" {
-  description = ""
-  sensitive = false
-  value = [
-  format("Listing name: %s", data.oci_marketplace_listings.test_listings.listings[0].name),
-  format("Package Type: %s", data.oci_marketplace_listings.test_listings.listings[0].package_type)
-  ]
+data "oci_marketplace_listings" "test_listings" {
+  name = [var.source_name] 
+  compartment_id = var.compartment_id
 }
