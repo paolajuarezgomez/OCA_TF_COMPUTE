@@ -5,8 +5,8 @@
 # TENANCY DETAILS
 #############################
 
-# default compartment 
-default_compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+# compartment 
+compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
 # region
 region= "uk-london-1"
 
@@ -48,7 +48,6 @@ ssh_private_key_path = "./key/id_rsa"
 # Marketplace image
 #############################
 name = "testserver"
-compartment_id="ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
 domain = "NoEK:UK-LONDON-1-AD-1"
 subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaagwdhhv3ytdctblnwvtniwdurfrrraz7c3zllw5kasy2qsjf26cdq"
 source_name = "Oracle WebLogic Server Enterprise Edition UCM"
