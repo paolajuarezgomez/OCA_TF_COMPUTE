@@ -1,5 +1,4 @@
-#  Deploy IaC (TF) with GitHub Actions. 
-# -- How to build a GitHub Action pipeline  --
+#  Deploy Weblogic Marketplace image with GitHub Actions. 
 
 ## ✅ Showcase
 
