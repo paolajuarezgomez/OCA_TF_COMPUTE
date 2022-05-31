@@ -45,34 +45,14 @@ ssh_private_key_path = "./key/id_rsa"
 
 
 #############################
-# OCI COA ADB
+# Marketplace image
 #############################
-
-#adb_password              >>>  Stored in a github secret as adb_password
-adb_workload               = "OLTP"
-adb_db_name                = "ADBCOADEMO2"
-adb_display_name           = "ADBCOADEMO2"
-adb_db_version             = "19c"
-cpu_core_count             = "1"
-data_storage_size_in_tbs   = "1"
-
-
-#############################
-# ADB Operations
-#############################
-#Enable (true) or disable (false) feature auto-scaling
-auto_scaling               = "true"
-#The current state of the Autonomous Database. Could be set to AVAILABLE or STOPPED
-adb_state                  = "AVAILABLE"
-#Enable/Disable Operations Insights for this Autonomous Database. Values supported are ENABLED and NOT_ENABLED
-insights_status            = "NOT_ENABLED"
-
-#Autonomous Data Guard provides a standby database instance in a different availability domain or in a standby database instance in different region. 
-#With a standby database in the current region, if the primary instance becomes unavailable, Autonomous Database automatically switches the role of the standby database to primary and begins recreating a new standby database.
-# With a cross-region standby database, you can perform a manual failover to the standby database if the current region goes down.
-local_data_guard_enabled= "false"
-
-is_data_guard_enabled = "true"
+name = "testserver"
+compartment_id="ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+domain = "NoEK:UK-LONDON-1-AD-1"
+subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaagwdhhv3ytdctblnwvtniwdurfrrraz7c3zllw5kasy2qsjf26cdq"
+source_name = "Oracle WebLogic Server Enterprise Edition UCM"
+shape_vm = "VM.Standard.E4.Flex"
 
 
 
