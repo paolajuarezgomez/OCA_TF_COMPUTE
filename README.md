@@ -60,8 +60,6 @@ secret_access_key
 * When the plan pipeline ends you can se the actions/github-script@v6  outcome, this allow you to review the plan outcome before approve the merge.
 ![output](images/PlanOutcome.png)
 
-![output](images/Planends.png)
-
 * This is the outcome of actions/github-script@v6 for the test pipeline.
 ![output](images/testOutcome.png)
 
