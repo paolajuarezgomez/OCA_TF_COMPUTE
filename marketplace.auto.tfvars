@@ -5,7 +5,7 @@
 # TENANCY DETAILS
 #############################
 # compartment 
-compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+compartment_id = "ocid1.---"
 # region
 region = "uk-london-1"
 
@@ -16,7 +16,7 @@ domain = "NoEK:UK-LONDON-1-AD-1"
 # Network
 #############################
 #subnet id
-subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaafgulkrnzgwbb3izknpr6jo24xk6rggrglgqaht4dovtvd3iaebfq"
+subnet_id = "ocid1.subnet.oc1.----"
 
 #############################
 # Compute 
