@@ -55,8 +55,7 @@ secret_access_key
 
 ![tabactions](images/Pullreques1.png)
 
-* This action will start the pipeline test and plan:
-![tabactions](images/pipelines.png)
+* This action will start the pipeline plan.
 
 * When the plan pipeline ends you can se the actions/github-script@v6  outcome, this allow you to review the plan outcome before approve the merge.
 ![output](images/PlanOutcome.png)
@@ -69,8 +68,8 @@ secret_access_key
 * When you approve the merge, the apply pipeline will be automatically launched.
 ![meergeends](images/meergeends.png)
 
-* Check that now you can see the database and the rest of the resoruces provisioned in your compartment.
-![console](images/DatabaseConsole.png)
+* Check that now you can see the compute image in your compartment.
+![console](images/compute.png)
 
 * After the provisioning, the outcome of the apply step is showed in the merge request page.(*Pull requests -> closed -> pull request created* )
 ![console](images/OutcomeApply.png)
