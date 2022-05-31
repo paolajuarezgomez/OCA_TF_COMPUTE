@@ -41,69 +41,13 @@ variable "compartment_id" {
   description = "compartment OCID"
 }
 
-#############################
-# naming convension
-#############################
 
-# the prefix that will be used for all the names of the OCI artifacts that this automation will provision
-variable "names_prefix" {
-  type        = string
-  default     = "coa-demo-"
-  description = "the prefix that will be used for all the names of the OCI artifacts that this automation will provision"
-}
-
-# the defined tags to be used for all the artifacts that this automation will provision
-variable "defined_tags" {
-  type        = map(string)
-  default     = {}
-  description = "the defined tags to be used for all the artifacts that this automation will provision"
-}
-
-# the freeform tags to be used for all the artifacts that this automation will provision
-variable "freeform_tags" {
-  type        = map(string)
-  default     = { "Demo" = "COA Change Management Operations Demo" }
-  description = "the freeform tags to be used for all the artifacts that this automation will provision"
-}
-
-#############################
-# COA Demo network
-#############################
-
-# The specific network compartment id. If this is null then the default, project level compartment_id will be used.
-variable "network_compartment_id" {
-  description = "The specific network compartment id. If this is null then the default, project level compartment_id will be used."
-}
-
-# VCN CIDR
-variable "vcn_cidr" {
-  type        = string
-  default     = "10.0.0.0/16"
-  description = "VCN CIDR"
-}
-
-# public subnet CIDR
-variable "public_subnet_cidr" {
-  type        = string
-  default     = "10.0.10.0/24"
-  description = "public subnet CIDR"
-}
-
-# public subnet CIDR
-variable "private_atp_subnet_cidr" {
-  type        = string
-  default     = "10.0.11.0/24"
-  description = "private subnet CIDR"
-}
 
 #############################
 # COA Demo network
 #############################
 
 variable "domain" {
-  type        = string
-}
-variable "name" {
   type        = string
 }
 variable "subnet_id" {
