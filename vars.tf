@@ -26,7 +26,7 @@ variable "fingerprint" {
 }
 
 # this is the full path on your local system to the private key used for the API key pair
-variable "ssh_public_key_path" {
+variable "private_key_path" {
   description = "This is the full path on your local system to the private key used for the API key pair"
 }
 
