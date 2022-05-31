@@ -38,17 +38,13 @@ token
 access_key_id 
 secret_access_key 
 ````
-* We are going to deploy an ATP database, include the admin password:
-
-````
-adb_password
-````
+* We are going to deploy a compute instance using a marketplace image.
 
 * The pipeline configuration is defined in the directory **.github/workflows**, in this case we have created three different workdlows: **plan.yaml, unit.yaml** and **apply.yaml**
 * Add your **api_private_key** to the file **user.pem** in the key directory
-* Add your **ssh public** and **ssh private keys** in the key directory, they will be used to connect to the bastion.
+* Add your **ssh public** in the key directory, it will be used to connect to the compute instance.
 * Rename the file **terraform.tfvars.template** to **terraform.tfvars** and add the value of your *tenancy_ocid* 
-* Define the values desired in the  **coa_demo.auto.tfvars** ( mandatory required ssh public key and ssh private key file´s names and your compartment_ocid) 
+* Define the values desired in the  **marketplace.auto.tfvars** 
 * Go to settings of your repo, and active the use of workflows.(*Settings-> Actions-> General-> Allow all actions and reusable workflows*)
 
 * The terraform code included in this demo will deploy the next resources:
