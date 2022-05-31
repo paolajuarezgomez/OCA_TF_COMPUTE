@@ -8,7 +8,7 @@ resource "oci_core_instance" "test_instance" {
     ocpus = 1
    }
 #Optional
-display_name = var.name
+#display_name = var.name
 create_vnic_details {
                 assign_private_dns_record = "true"
                 assign_public_ip = "true"
