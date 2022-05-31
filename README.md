@@ -47,8 +47,7 @@ secret_access_key
 * Define the values desired in the  **marketplace.auto.tfvars** 
 * Go to settings of your repo, and active the use of workflows.(*Settings-> Actions-> General-> Allow all actions and reusable workflows*)
 
-* The terraform code included in this demo will deploy the next resources:
-![COA-Demo-Diagram.png](images/Diagram.png)
+* The terraform code included in this demo will deploy a compute image with the source "Oracle WebLogic Server Enterprise Edition UCM"
 
 * Create a new branch, make changes in the repo files and publish the changes to the new branch. 
 * Open a "merge pull request" and check how the first two pipelines run:
@@ -76,12 +75,6 @@ secret_access_key
 * After the provisioning, the outcome of the apply step is showed in the merge request page.(*Pull requests -> closed -> pull request created* )
 ![console](images/OutcomeApply.png)
 
-* If we review tab "actions" , we can check the 3 different pipelines:
-![tabactions](images/tabactions.png)
-
-* Remove manually (using OCI Console) all the resources created in this demo.
-
-If you need help, ask us in the slack channel #iac-enablement
 
 ## ✅ References
 * [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
