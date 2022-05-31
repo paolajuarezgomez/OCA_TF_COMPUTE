@@ -5,6 +5,6 @@
 tenancy_id = "ocid1.tenancy.oc1..aaaaaaaaxzpxbcag7zgamh2erlggqro3y63tvm2rbkkjz4z2zskvagupiz7a"
 
 # this is the full path on your local system to the private key used for the API key pair
-private_key_path     = "./key/user.pem"
+private_key_path = "./key/user.pem"
 
 

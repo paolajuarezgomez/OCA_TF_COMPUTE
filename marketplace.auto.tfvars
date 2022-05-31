@@ -7,7 +7,7 @@
 # compartment 
 compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
 # region
-region= "uk-london-1"
+region = "uk-london-1"
 #Domain
 domain = "NoEK:UK-LONDON-1-AD-1"
 

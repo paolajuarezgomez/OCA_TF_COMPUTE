@@ -48,16 +48,16 @@ variable "compartment_id" {
 #############################
 
 variable "domain" {
-  type        = string
+  type = string
 }
 variable "subnet_id" {
-  type        = string
+  type = string
 }
 variable "source_name" {
-  type        = string
+  type = string
 }
 variable "shape_vm" {
-  type        = string
+  type = string
 }
 
 # Compute instances ssh private key
