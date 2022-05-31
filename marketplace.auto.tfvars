@@ -16,7 +16,7 @@ domain = "NoEK:UK-LONDON-1-AD-1"
 # Network
 #############################
 #subnet id
-subnet_id =ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl5xlwn2rs4nqkpbx2evba
+subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl5xlwn2rs4nqkpbx2evba"
 
 #############################
 # Marketplace image
