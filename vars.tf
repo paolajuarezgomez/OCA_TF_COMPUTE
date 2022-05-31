@@ -36,9 +36,9 @@ variable "region" {
   description = "region (us-phoenix-1, ca-toronto-1, etc)"
 }
 
-# default compartment 
-variable "default_compartment_id" {
-  description = "default compartment OCID"
+#  compartment 
+variable "compartment_id" {
+  description = "compartment OCID"
 }
 
 #############################
@@ -103,7 +103,6 @@ variable "private_atp_subnet_cidr" {
 variable "domain" {
   type        = string
 }
-
 variable "name" {
   type        = string
 }
