@@ -96,140 +96,23 @@ variable "private_atp_subnet_cidr" {
   description = "private subnet CIDR"
 }
 
-
 #############################
-# Bastion
-#############################
-
-# Compute instances ssh public key
-variable "ssh_private_key_path" {
-  description = "Compute instances ssh public key"
-}
-
-# Compute instances ssh private key
-variable "ssh_public_key_path" {
-  description = "Compute instances ssh private key"
-}
-
-# The name of the image to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific image name in the target region.
-variable "image_name" {
-  type        = string
-  default     = "Oracle-Linux-7.9-2022.04.04-0"
-  description = "The name of the image to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific image name in the target region."
-}
-
-variable "shape" {
-  type        = string
-  default     = "VM.Standard2.1"
-  description = "The name of the shape to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the spaecific shape name in the target region."
-}
-
-
-#############################
-# ADB
+# COA Demo network
 #############################
 
-
-variable "adb_password" {
+variable "domain" {
   type        = string
-  description = "Initial ADB ADMIN user password"
-  sensitive   = true
 }
 
-variable "adb_db_name" {
+variable "name" {
   type        = string
-  description = "ADB DB Name"
 }
-
-variable "adb_display_name" {
+variable "subnet_id" {
   type        = string
-  description = "ADB display name shown in the console"
 }
-
-variable "adb_db_version" {
+variable "source_name" {
   type        = string
-  default     = "19c"
-  description = "ADB Oracle database version"
 }
-
-variable "adb_workload" {
+variable "shape_vm" {
   type        = string
-  default     = "OLTP"
-  description = "ADB workload type: OLTP, DW"
-}
-
-variable "ATP_tde_wallet_zip_file" {
-  type        = string
-  default     = "adb_wallet.zip"
-  description = "Name of the file where to store the ADB wallet"
-}
-
-variable "oracle_instant_client_version" {
-  type        = string
-  default     = "19.10"
-  description = "Oracle client version"
-}
-
-variable "oracle_instant_client_version_short" {
-  type        = string
-  default     = "19.10"
-  description = "Oracle client version short name"
-}
-
-variable "cpu_core_count" {
-  default     = "1"
-  description = "cpu database"
-}
-
-variable "data_storage_size_in_tbs" {
-  default     = "1"
-  description = "database size in tbs"
-}
-
-variable "conn_db" {
-  default = ""
-}
-
-variable "username" {
-  default = ""
-  sensitive   = true
-}
-
-variable "password" {
-  default = ""
-  sensitive   = true
-}
-
-#############################
-# ADB Operations
-#############################
-
-
-variable "auto_scaling" {
-  type        = string
-  default = "true"
-}
-
-
-variable "adb_state" {
-  type        = string
-  #state - (Optional) (Updatable) The current state of the Autonomous Database. Could be set to AVAILABLE or STOPPED
-  default = "AVAILABLE"
-}
-
-variable "insights_status" {
-  type        = string
-  #operations_insights_status - (Optional) (Updatable) Status of Operations Insights for this Autonomous Database.
-  # Values supported are ENABLED and NOT_ENABLED
-  default = "NOT_ENABLED"
-}
-
-variable "local_data_guard_enabled" {
-  type        = bool
-  default = "false"
-}
-
-variable "is_data_guard_enabled" {
-  type        = bool
-  default = "false"
 }
