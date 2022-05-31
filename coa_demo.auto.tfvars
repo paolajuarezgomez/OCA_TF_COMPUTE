@@ -15,14 +15,19 @@ domain = "NoEK:UK-LONDON-1-AD-1"
 #############################
 # Network
 #############################
+#subnet id
 subnet_id =ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl5xlwn2rs4nqkpbx2evba
 
 #############################
 # Marketplace image
 #############################
-name = "testserver"
+#source name
 source_name = "Oracle WebLogic Server Enterprise Edition UCM"
+
+#shape
+#The selected shape must be supported by the source
 shape_vm = "VM.Standard.E4.Flex"
+
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
 
