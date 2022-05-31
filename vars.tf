@@ -44,7 +44,7 @@ variable "compartment_id" {
 
 
 #############################
-# COA Demo network
+# Compute
 #############################
 
 variable "domain" {
@@ -58,4 +58,9 @@ variable "source_name" {
 }
 variable "shape_vm" {
   type        = string
+}
+
+# Compute instances ssh private key
+variable "ssh_public_key_path" {
+  description = "Compute instances ssh private key"
 }
