@@ -11,7 +11,6 @@ region = "uk-london-1"
 #Domain
 domain = "NoEK:UK-LONDON-1-AD-1"
 
-
 #############################
 # Network
 #############################
