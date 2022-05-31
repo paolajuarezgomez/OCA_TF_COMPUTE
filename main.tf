@@ -19,7 +19,7 @@ source_details {
     source_type = "image"
   }
  metadata = {
-    ssh_authorized_keys = var.ssh_public_key
+    ssh_authorized_keys = var.ssh_public_key_path
   }
 }
 
