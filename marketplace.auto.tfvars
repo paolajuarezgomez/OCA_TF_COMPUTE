@@ -21,7 +21,7 @@ subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaafgulkrnzgwbb3izknpr6jo24xk6rgg
 #############################
 # Compute 
 #############################
-name= "Test"
+name= "Weblogic_Compute"
 
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
