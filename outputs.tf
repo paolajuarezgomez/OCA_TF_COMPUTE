@@ -15,3 +15,9 @@ output "image" {
 
 
 
+output "oracle-linux-7-7-latest-name" {
+  value = data.oci_core_images.oraclelinux-7-7.images.0.display_name
+}
+output "oracle-linux-7-7-latest-id" {
+  value = data.oci_core_images.oraclelinux-7-7.images.0.id
+}

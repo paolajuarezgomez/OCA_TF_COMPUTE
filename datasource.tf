@@ -15,3 +15,15 @@ data "oci_core_images" "this" {
   #Optional
   display_name = var.image_name
 }
+
+# get latest Oracle Linux 7.7 image
+data "oci_core_images" "oraclelinux-7-7" {
+  compartment_id = var.oci_compartment
+  operating_system = "Oracle Linux"
+  operating_system_version = "7.7"
+  filter {
+    name = "display_name"
+    values = ["^([a-zA-z]+)-([a-zA-z]+)-([\\.0-9]+)-([\\.0-9-]+)$"]
+    regex = true
+  }
+}
