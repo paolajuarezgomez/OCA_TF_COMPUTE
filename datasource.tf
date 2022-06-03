@@ -18,7 +18,7 @@ data "oci_core_images" "this" {
 
 # get latest Oracle Linux 7.7 image
 data "oci_core_images" "oraclelinux-7-7" {
-  compartment_id = var.oci_compartment
+  compartment_id = var.compartment_id
   operating_system = "Oracle Linux"
   operating_system_version = "7.7"
   filter {
