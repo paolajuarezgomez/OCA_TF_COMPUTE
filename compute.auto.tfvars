@@ -27,7 +27,7 @@ name= "Weblogic_Compute"
 ssh_public_key_path = "./key/id_rsa.pub"
 
 #############################
-# Marketplace image
+# Compute Image
 #############################
 #source name
 source_name = "Oracle WebLogic Server Enterprise Edition UCM"
