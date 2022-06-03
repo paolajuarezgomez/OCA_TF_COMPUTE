@@ -85,9 +85,14 @@ variable "plug_in_vul" {
   default = DISABLE
 }
 
-variable "plug_os_man" {
+variable "plug_in_java"{
   type = string
   default = DISABLE
+}
+
+variable "plug_os_man" {
+  type = string
+  default = ENABLE
 }
 
 variable "plug_man_agent" {
