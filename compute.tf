@@ -12,7 +12,7 @@ resource "oci_core_instance" "test_instance" {
     subnet_id                 = var.subnet_id
   }
   source_details {
-    source_id   = data.oci_core_images.this.id
+    source_id   = data.oci_core_images.this.image.ID
     source_type = "image"
   }
   metadata = {
