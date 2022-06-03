@@ -20,7 +20,7 @@ data "oci_core_images" "this" {
 data "oci_core_images" "oraclelinux" {
   compartment_id = var.compartment_id
   operating_system = "Oracle Linux"
-  operating_system_version = "7.9"
+  operating_system_version = "8.5"
   filter {
     name = "display_name"
     values = ["^([a-zA-z]+)-([a-zA-z]+)-([\\.0-9]+)-([\\.0-9-]+)$"]
