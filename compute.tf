@@ -14,7 +14,7 @@ resource "oci_core_instance" "deploy_instance" {
       name          = "Vulnerability Scanning"
     }
     plugins_config {
-      desired_state = "ENABLED"
+      desired_state = var.plug_in_java
       name          = "Oracle Java Management Service"
     }
     plugins_config {
