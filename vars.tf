@@ -82,36 +82,49 @@ variable "ssh_public_key_path" {
 
 variable "plug_in_vul" {
   type = string
-  default = FALSE
+  default = DISABLE
+
 }
 
 variable "plug_os_man" {
   type = string
-   default = FALSE
+  default = DISABLE
+
 }
 
 variable "plug_man_agent" {
   type = string
+  default = ENABLE
+
 }
 
 variable "plug_cus_logs" {
-  type = string
+  type = string  
+  default = ENABLE
+
 }
 
 variable "plug_in_command" {
   type = string
+  default = ENABLE
+
 }
 
 variable "plug_in_mon" {
   type = string
+  default = ENABLE
+
 }
 
-variable "plug_in_mon" {
+variable "" {
   type = string
+  default = DISABLE
 }
 
 variable "plug_bastion" {
   type = string
+  default = DISABLE
+
 }
     
 
