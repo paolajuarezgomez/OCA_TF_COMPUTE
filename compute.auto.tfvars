@@ -40,6 +40,9 @@ shape_vm = "VM.Standard1.1"
 #Vulnerability Scanning. Options [ENABLE / DISABLE]
 plug_in_vul = "ENABLE"   
 
+#Oracle Java Management Service	
+plug_in_java = "ENABLE"   
+
 #OS Management Service Agent. Options [ENABLE / DISABLE]
 plug_os_man = "ENABLE"   
 
