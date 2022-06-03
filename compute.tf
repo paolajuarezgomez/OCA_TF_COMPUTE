@@ -27,7 +27,7 @@ resource "oci_core_instance" "deploy_instance" {
   display_name = "${var.names_prefix}compute"
   source_details {
     #Required
-    source_id   = data.oci_core_images.this.images[0].id
+    source_id   = data.oci_core_images.this.images.0.id
     source_type = "image"
   }
   preserve_boot_volume = false
