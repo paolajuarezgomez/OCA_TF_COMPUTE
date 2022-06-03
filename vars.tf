@@ -41,7 +41,9 @@ variable "compartment_id" {
   description = "compartment OCID"
 }
 
-
+variable "names_prefix" {
+  type = string
+}
 
 #############################
 # Compute
