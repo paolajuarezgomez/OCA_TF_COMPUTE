@@ -8,10 +8,6 @@
 compartment_id = "ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxx"
 # region
 region = "uk-london-1"
-
-#Domain
-domain = "NoEK:UK-LONDON-1-AD-1"
-
 # the prefix that will be used for all the names of the OCI artifacts that this automation will provision
 names_prefix = "coa-demo-"
 
@@ -24,7 +20,6 @@ subnet_id = "ocid1.subnet.xxxxxxxxxxxxxxxxxxxxx"
 #############################
 # Compute 
 #############################
-
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
 
@@ -35,11 +30,12 @@ ssh_public_key_path = "./key/id_rsa.pub"
 #oci compute image list --all --profile <<your_profile>> --compartment-id <<your_compartment>> --query "data[*]".{'name:"display-name",id:"id"'} --output table
 image_name = "Oracle-Linux-7.9-2022.04.04-0"
 
-#shape
-#The selected shape must be supported by the source
+#shape, the selected shape must be supported by the source
 shape_vm = "VM.Standard1.1"
 
-
+#############################
+# Plug-ins 
+#############################
 
 
 
