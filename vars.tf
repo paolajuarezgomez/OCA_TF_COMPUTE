@@ -54,9 +54,7 @@ variable "domain" {
 variable "subnet_id" {
   type = string
 }
-variable "source_name" {
-  type = string
-}
+
 variable "shape_vm" {
   type = string
 }
