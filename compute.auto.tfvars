@@ -37,6 +37,26 @@ shape_vm = "VM.Standard1.1"
 # Plug-ins 
 #############################
 
+#Vulnerability Scanning. Options [ENABLE / DISABLE]
+plug_in_vul = "ENABLE"   
+
+#OS Management Service Agent. Options [ENABLE / DISABLE]
+plug_os_man = "ENABLE"   
+
+#Management Agent. Options [ENABLE / DISABLE]
+plug_man_agent =  "ENABLE"   
+
+#Custom Logs Monitoring. Options [ENABLE / DISABLE]
+plug_cus_logs =  "ENABLE"   
+    
+#Compute Instance Run Command. Options [ENABLE / DISABLE]
+plug_in_command =  "ENABLE"   
+
+#Compute Instance Monitoring. Options [ENABLE / DISABLE]
+plug_in_mon =  "ENABLE"   
+
+#Block Volume Management. Options [ENABLE / DISABLE]
+plug_in_vol=   "ENABLE"   
 
 
 
