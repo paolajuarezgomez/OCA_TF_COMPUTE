@@ -5,7 +5,50 @@ resource "oci_core_instance" "deploy_instance" {
   availability_domain = data.oci_identity_availability_domains.availability_domains.availability_domains[1 % length(data.oci_identity_availability_domains.availability_domains.availability_domains)].name
   compartment_id      = var.compartment_id
   shape               = var.shape_vm
-
+ 
+  agent_config {
+    are_all_plugins_disabled = "false"
+    is_management_disabled   = "false"
+    is_monitoring_disabled   = "false"
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Vulnerability Scanning"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Oracle Java Management Service"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "OS Management Service Agent"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Management Agent"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Custom Logs Monitoring"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Compute Instance Run Command"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Compute Instance Monitoring"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Block Volume Management"
+    }
+    plugins_config {
+      desired_state = "ENABLED"
+      name          = "Bastion"
+    }
+ 
+  
+  }
   create_vnic_details {
 
     #Optional

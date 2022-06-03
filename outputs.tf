@@ -3,12 +3,15 @@
 
 
 output "compute" {
-  value       = oci_core_instance.deploy_instance.agent_config
+  value = {
+  agent_config       = oci_core_instance.deploy_instance.agent_config
+  #Plug       = oci_core_instance.deploy_instance.agent_config[0].plugins_config
+}
 }
 
 
-output "image" {
-  description = "image_details"
-  value       = data.oci_core_images.this.images[0]
-}
+#output "image" {
+#  description = "image_details"
+#  value       = data.oci_core_images.this.images[0]
+#}
 
