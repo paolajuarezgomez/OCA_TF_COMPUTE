@@ -47,6 +47,9 @@ variable "compartment_id" {
 # Compute
 #############################
 
+variable "image_name" {
+  type = string
+}
 
 variable "domain" {
   type = string
