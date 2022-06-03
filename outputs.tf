@@ -13,12 +13,3 @@ output "image" {
   value       = data.oci_core_images.this.images[0].display_name
 }
 
-
-
-output "oracle-linux-7-7-latest-name" {
-  value = data.oci_core_images.oraclelinux.images[0].display_name
-}
-
-output "oracle-linux-7-7-latest-id" {
-  value = data.oci_core_images.oraclelinux.images[0].id
-}
