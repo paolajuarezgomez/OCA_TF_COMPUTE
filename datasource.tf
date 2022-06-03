@@ -10,7 +10,7 @@ data "oci_identity_availability_domains" "availability_domains" {
 
 data "oci_core_images" "this" {
   #Required
-  compartment_id = var.default_compartment_id
+  compartment_id = var.compartment_id
 
   #Optional
   display_name = var.image_name
