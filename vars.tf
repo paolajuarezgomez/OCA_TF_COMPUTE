@@ -45,6 +45,12 @@ variable "names_prefix" {
   type = string
 }
 
+# the freeform tags to be used for all the artifacts that this automation will provision
+variable "freeform_tags" {
+  type        = map(string)
+  default     = { "Demo" = "COA Change Management Operations Demo" }
+  description = "the freeform tags to be used for all the artifacts that this automation will provision"
+}
 #############################
 # Compute
 #############################
