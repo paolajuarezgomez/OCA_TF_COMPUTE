@@ -22,17 +22,3 @@ resource "oci_core_instance" "test_instance" {
     ssh_authorized_keys = chomp(file(var.ssh_public_key_path))
   }
 }
-
-resource "oci_marketplace_accepted_agreement" "test_accepted_agreement" {
-  agreement_id    = oci_marketplace_listing_package_agreement.test_listing_package_agreement.agreement_id
-  compartment_id  = var.compartment_id
-  listing_id      = data.oci_marketplace_listing.test_listing.id
-  package_version = data.oci_marketplace_listing.test_listing.default_package_version
-  signature       = oci_marketplace_listing_package_agreement.test_listing_package_agreement.signature
-}
-
-resource "oci_marketplace_listing_package_agreement" "test_listing_package_agreement" {
-  agreement_id    = data.oci_marketplace_listing_package_agreements.test_listing_package_agreements.agreements[0].id
-  listing_id      = data.oci_marketplace_listing.test_listing.id
-  package_version = data.oci_marketplace_listing.test_listing.default_package_version
-}
