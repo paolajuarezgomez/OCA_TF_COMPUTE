@@ -58,7 +58,8 @@ plug_in_mon =  "ENABLE"
 #Block Volume Management. Options [ENABLE / DISABLE]
 plug_in_vol=   "ENABLE"   
 
-
+#Bastion. Options [ENABLE / DISABLE]
+plug_bastion=   "ENABLE"   
 
 
 
