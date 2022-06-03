@@ -5,7 +5,7 @@
 # TENANCY DETAILS
 #############################
 # compartment 
-compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+compartment_id = "ocid1.compartment.xxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # region
 region = "uk-london-1"
@@ -16,7 +16,7 @@ names_prefix = "coa-demo-"
 # Network
 #############################
 #subnet id
-subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl5xlwn2rs4nqkpbx2evba"
+subnet_id = "ocid1.subnet.xxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 #############################
 # Compute 
