@@ -32,7 +32,8 @@ ssh_public_key_path = "./key/id_rsa.pub"
 # Compute Image
 #############################
 # The name of the image to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific image name in the target region.
-image_name = "Oracle-Linux-8.6-2022.05.31-0"
+#image_name = "Oracle-Linux-8.6-2022.05.31-0"
+image_name ="Oracle-Linux-7.9-2022.04.04-0"
 
 #shape
 #The selected shape must be supported by the source
