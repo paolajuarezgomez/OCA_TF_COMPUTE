@@ -4,7 +4,7 @@
 
 output "availability_Domain" {
   description = "availability_domain"
-  value       = oci_core_instance.test_instance.availability_domain
+  value       = oci_core_instance.deploy_instance.availability_domain
 }
 
 
