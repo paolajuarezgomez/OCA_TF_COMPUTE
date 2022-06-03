@@ -10,7 +10,7 @@ output "availability_Domain" {
 
 output "image" {
   description = "image_details"
-  value       = oci_core_images.this
+  value       = data.oci_core_images.this
 }
 
 
