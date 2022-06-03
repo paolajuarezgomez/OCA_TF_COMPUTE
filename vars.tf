@@ -75,3 +75,43 @@ variable "ssh_public_key_path" {
   type        = string
   description = "Compute instances ssh private key"
 }
+
+#############################
+# Plug-ins cloud agent
+#############################
+
+variable "plug_in_vul" {
+  type = string
+  default = FALSE
+}
+
+variable "plug_os_man" {
+  type = string
+   default = FALSE
+}
+
+variable "plug_man_agent" {
+  type = string
+}
+
+variable "plug_cus_logs" {
+  type = string
+}
+
+variable "plug_in_command" {
+  type = string
+}
+
+variable "plug_in_mon" {
+  type = string
+}
+
+variable "plug_in_mon" {
+  type = string
+}
+
+variable "plug_bastion" {
+  type = string
+}
+    
+
