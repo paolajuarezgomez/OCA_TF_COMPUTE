@@ -1,6 +1,6 @@
 resource "oci_core_instance" "test_instance" {
   #Required
-  availability_domain = data.oci_identity_availability_domains.availability_domains.availability_domains[length(data.oci_identity_availability_domains.availability_domains.availability_domains)].name
+  availability_domain = data.oci_identity_availability_domains.availability_domains.availability_domains[0].name
   compartment_id      = var.compartment_id
   shape               = var.shape_vm
  
