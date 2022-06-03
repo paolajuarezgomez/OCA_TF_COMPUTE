@@ -5,7 +5,8 @@
 # TENANCY DETAILS
 #############################
 # compartment 
-compartment_id = "ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxx"
+compartment_id = "ocid1.compartment.oc1..aaaaaaaaes3c3pxlxbcd2upv4vh7wbdfd7vgywuaa75izuu3otrb2omhekaa"
+
 # region
 region = "uk-london-1"
 # the prefix that will be used for all the names of the OCI artifacts that this automation will provision
@@ -15,7 +16,7 @@ names_prefix = "coa-demo-"
 # Network
 #############################
 #subnet id
-subnet_id = "ocid1.subnet.xxxxxxxxxxxxxxxxxxxxx"
+subnet_id = "ocid1.subnet.oc1.uk-london-1.aaaaaaaarf7w5cityqg3g75medvy7bvw66griadl5xlwn2rs4nqkpbx2evba"
 
 #############################
 # Compute 
