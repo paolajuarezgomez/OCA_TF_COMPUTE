@@ -12,6 +12,9 @@ region = "uk-london-1"
 #Domain
 domain = "NoEK:UK-LONDON-1-AD-1"
 
+# the prefix that will be used for all the names of the OCI artifacts that this automation will provision
+names_prefix = "coa-demo-"
+
 #############################
 # Network
 #############################
@@ -21,7 +24,6 @@ subnet_id = "ocid1.subnet.oc1.----"
 #############################
 # Compute 
 #############################
-name= "Weblogic_Compute"
 
 # Compute instances ssh public key
 ssh_public_key_path = "./key/id_rsa.pub"
@@ -29,8 +31,8 @@ ssh_public_key_path = "./key/id_rsa.pub"
 #############################
 # Compute Image
 #############################
-#source name
-source_name = "Oracle WebLogic Server Enterprise Edition UCM"
+# The name of the image to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific image name in the target region.
+image_name = "Oracle-Linux-8.5-2021.12.08-0"
 
 #shape
 #The selected shape must be supported by the source
