@@ -36,7 +36,7 @@ image_name = "Oracle-Linux-7.9-2022.04.04-0"
 
 #shape
 #The selected shape must be supported by the source
-shape_vm = "VM.Standard2.1"
+shape_vm = "VM.Standard1.1"
 
 
 
